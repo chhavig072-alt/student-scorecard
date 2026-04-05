@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.app-container {
+  max-width: 950px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.student-form {
+  background: #f8f9ff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border: 1px solid #dbe4ff;
+}
+
+.student-form h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.student-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.student-form input:focus {
+  border-color: #5c6bc0;
+}
+
+.student-form button {
+  background: #5c6bc0;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.student-form button:hover {
+  background: #3f51b5;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.student-table th,
+.student-table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.student-table th {
+  background: #5c6bc0;
+  color: white;
+}
+
+.student-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.score-input {
+  width: 90px;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.status {
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.pass {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.fail {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.no-data {
+  color: #777;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .student-form h2 {
+    font-size: 1.2rem;
+  }
+}
